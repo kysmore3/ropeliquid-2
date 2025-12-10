@@ -52,8 +52,6 @@
     "@testing-library/user-event": "12.8.3",
     "@types/lodash": "4.14.198",
     "@types/node": "18.7.13",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
     "@types/react-router-dom": "5.3.3",
     "@uniswap/sdk-core": "3.0.1",
     "@uniswap/v3-sdk": "3.9.0",
@@ -107,6 +105,9 @@
   "resolutions": {
     "react-error-overlay": "6.0.9",
     "@coinbase/wallet-sdk": "4.3.0",
+    "@types/react": "17.0.21",
+    "@types/react-dom": "17.0.9",
+    "@types/react-router-dom": "5.3.3"
     "ethers@6.12.1": "patch:ethers@npm:6.12.1#.yarn/patches/ethers-npm-6.12.1-7d4a09a25c",
     "jest-runner": "patch:jest-runner@npm:27.5.1#.yarn/patches/jest-runner-npm-27.5.1-2ed2c1cda8",
     "viem@2.39.0": "patch:viem@npm:2.39.0#.yarn/patches/viem-npm-2.39.0-c113f391fd"
@@ -140,8 +141,10 @@
     "@lingui/loader": "4.10.0",
     "@lingui/vite-plugin": "4.11.3",
     "@typechain/ethers-v6": "0.5.1",
+    "@types/react": "17.0.21",
     "@types/react-calendar": "4.1.0",
     "@types/react-date-range": "1.4.9",
+    "@types/react-dom": "17.0.9",
     "@typescript-eslint/eslint-plugin": "8.26.1",
     "@typescript-eslint/parser": "8.26.1",
     "@vitejs/plugin-react": "4.3.1",

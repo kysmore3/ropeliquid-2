@@ -79,7 +79,11 @@ export default function ChartTokenSelector(props: Props) {
         "mr-24": oneRowLabels === false,
         "py-0 md:h-40": isSwap,
       })}
-      desktopPanelClassName={cx("max-w-[100vw] shadow-md", { "w-[520px]": isSwap, "w-[880px]": !isSwap })}
+      desktopPanelClassName={cx("glass max-w-[100vw] shadow-md", {
+        "w-[520px]": isSwap,
+        "w-[880px]": !isSwap,
+      })}
+      modalClassName="glass"
       chevronClassName="hidden"
       label={
         <Button variant="secondary">

@@ -257,7 +257,7 @@ function MobileSlideModal({
           data-qa={qa}
           ref={setCurtainRef}
           className={cx(
-            "text-body-medium fixed left-0 right-0 z-[10000] flex flex-col rounded-t-4 border-t border-slate-700 bg-slate-900",
+            "bg-white/6 text-body-medium fixed left-0 right-0 z-[10000] flex flex-col rounded-t-4 border border-t border-slate-700 border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),_0_8px_32px_rgba(0,0,0,0.3)] saturate-[1.8] backdrop-blur-[12px]",
             className
           )}
           style={curtainStyle}
