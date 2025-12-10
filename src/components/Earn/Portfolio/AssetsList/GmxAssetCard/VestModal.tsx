@@ -398,7 +398,7 @@ export function VestModal({ isVisible, setIsVisible, processedData, reservedAmou
       onClick={() => openConnectModal?.()}
       disabled={!openConnectModal}
     >
-      <Trans>Connect Wallet</Trans>
+      <Trans>Lose more money</Trans>
     </Button>
   );
 

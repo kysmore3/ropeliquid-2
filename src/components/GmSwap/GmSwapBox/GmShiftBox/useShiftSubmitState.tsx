@@ -122,7 +122,7 @@ export function useShiftSubmitState({
 
     if (!account) {
       return {
-        text: t`Connect Wallet`,
+        text: t`Lose more money`,
         onSubmit: () => openConnectModal?.(),
       };
     }

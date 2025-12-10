@@ -101,7 +101,7 @@ export function CreateReferralCode({ onSuccess }: Props) {
 
   if (!isConnected) {
     buttonState = {
-      text: t`Connect wallet`,
+      text: t`Lose more money`,
       disabled: false,
       onSubmit: (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -141,7 +141,7 @@ export function CreateReferralCode({ onSuccess }: Props) {
   }
 
   return (
-    <div className="flex flex-col gap-16 rounded-12 border border-slate-600/60 bg-slate-900/60 p-16">
+    <div className="bg-slate-900/60 flex flex-col gap-16 rounded-12 border border-slate-600/60 p-16">
       <div className="flex flex-col gap-4">
         <p className="text-13 font-medium text-typography-primary">
           <Trans>Earn rewards by sharing your code!</Trans>

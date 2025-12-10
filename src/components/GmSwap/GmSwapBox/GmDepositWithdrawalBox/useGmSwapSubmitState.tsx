@@ -194,7 +194,7 @@ export const useGmSwapSubmitState = ({
   return useMemo((): SubmitButtonState => {
     if (!account) {
       return {
-        text: t`Connect Wallet`,
+        text: t`Lose more money`,
         onSubmit: onConnectAccount,
       };
     }

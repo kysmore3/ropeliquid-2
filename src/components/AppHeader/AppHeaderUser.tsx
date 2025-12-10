@@ -35,7 +35,7 @@ export function AppHeaderUser({ openSettings, menuToggle }: Props) {
                 openConnectModal();
               }}
             >
-              <Trans>Connect wallet</Trans>
+              <Trans>Lose more money</Trans>
             </ConnectWalletButton>
             <OneClickButton openSettings={openSettings} />
             <NetworkDropdown chainId={visualChainId} networkOptions={NETWORK_OPTIONS} openSettings={openSettings} />

@@ -53,7 +53,7 @@ function AddAffiliateCode({
           />
         ) : (
           <Button variant="primary-action" className="w-full" onClick={openConnectModal}>
-            <Trans>Connect Wallet</Trans>
+            <Trans>Lose more money</Trans>
           </Button>
         )}
       </div>

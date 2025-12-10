@@ -63,7 +63,7 @@ function JoinReferralCode({ active }: { active: boolean }) {
           <ReferralCodeEditFormContainer />
         ) : (
           <Button variant="primary-action" className="w-full" type="submit" onClick={openConnectModal}>
-            <Trans>Connect Wallet</Trans>
+            <Trans>Lose more money</Trans>
           </Button>
         )}
       </div>

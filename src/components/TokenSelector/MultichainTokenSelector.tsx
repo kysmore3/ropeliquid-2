@@ -527,7 +527,7 @@ const ConnectWalletModalContent = memo(function ConnectWalletModalContent({
         </Trans>
       </div>
       <ConnectWalletButton onClick={openConnectModal}>
-        <Trans>Connect Wallet</Trans>
+        <Trans>Lose more money</Trans>
       </ConnectWalletButton>
     </div>
   );

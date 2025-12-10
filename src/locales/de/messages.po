@@ -1983,15 +1983,6 @@ msgstr "Markt - Short Zun."
 msgid "Deposit in progress"
 msgstr ""
 
-#: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/VestModal.tsx
-#: src/components/GmSwap/GmSwapBox/GmDepositWithdrawalBox/useGmSwapSubmitState.tsx
-#: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
-#: src/components/Referrals/AddAffiliateCode.tsx
-#: src/components/Referrals/JoinReferralCode.tsx
-#: src/components/TokenSelector/MultichainTokenSelector.tsx
-msgid "Connect Wallet"
-msgstr "Wallet verbinden"
-
 #: src/components/SettingsModal/ThemeSelector.tsx
 msgid "System"
 msgstr "System"
@@ -4245,13 +4236,6 @@ msgstr "Positionen auswählen"
 msgid "Create Stop Loss"
 msgstr "Stop-Loss erstellen"
 
-#: src/components/AppHeader/AppHeaderUser.tsx
-#: src/components/PositionShare/CreateReferralCode.tsx
-#: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
-#: src/domain/synthetics/trade/utils/validation.ts
-msgid "Connect wallet"
-msgstr "Wallet verbinden"
-
 #: src/context/SubaccountContext/SubaccountContextProvider.tsx
 msgid "Failed to generate session"
 msgstr "Fehlgeschlagen beim Generieren der Sitzung"
@@ -5813,6 +5797,19 @@ msgstr "Swap {fromAmount} für {toAmount}"
 #: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
 msgid "Amount"
 msgstr "Menge"
+
+#: src/components/AppHeader/AppHeaderUser.tsx
+#: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/VestModal.tsx
+#: src/components/GmSwap/GmSwapBox/GmDepositWithdrawalBox/useGmSwapSubmitState.tsx
+#: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
+#: src/components/PositionShare/CreateReferralCode.tsx
+#: src/components/Referrals/AddAffiliateCode.tsx
+#: src/components/Referrals/JoinReferralCode.tsx
+#: src/components/TokenSelector/MultichainTokenSelector.tsx
+#: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
+#: src/domain/synthetics/trade/utils/validation.ts
+msgid "Lose more money"
+msgstr "Lose more money"
 
 #: src/components/TradeBox/hooks/useTradeButtonState.tsx
 #: src/components/TradeBox/hooks/useTradeButtonState.tsx

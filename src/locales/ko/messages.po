@@ -1983,15 +1983,6 @@ msgstr "시장 - 숏 증가"
 msgid "Deposit in progress"
 msgstr ""
 
-#: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/VestModal.tsx
-#: src/components/GmSwap/GmSwapBox/GmDepositWithdrawalBox/useGmSwapSubmitState.tsx
-#: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
-#: src/components/Referrals/AddAffiliateCode.tsx
-#: src/components/Referrals/JoinReferralCode.tsx
-#: src/components/TokenSelector/MultichainTokenSelector.tsx
-msgid "Connect Wallet"
-msgstr "지갑 연동"
-
 #: src/components/SettingsModal/ThemeSelector.tsx
 msgid "System"
 msgstr "시스템"
@@ -4245,13 +4236,6 @@ msgstr "포지션 선택"
 msgid "Create Stop Loss"
 msgstr "손절 생성"
 
-#: src/components/AppHeader/AppHeaderUser.tsx
-#: src/components/PositionShare/CreateReferralCode.tsx
-#: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
-#: src/domain/synthetics/trade/utils/validation.ts
-msgid "Connect wallet"
-msgstr "지갑 연결"
-
 #: src/context/SubaccountContext/SubaccountContextProvider.tsx
 msgid "Failed to generate session"
 msgstr "세션 생성 실패"
@@ -5813,6 +5797,19 @@ msgstr "{fromAmount}을 {toAmount}으로 스왑"
 #: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
 msgid "Amount"
 msgstr "수량"
+
+#: src/components/AppHeader/AppHeaderUser.tsx
+#: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/VestModal.tsx
+#: src/components/GmSwap/GmSwapBox/GmDepositWithdrawalBox/useGmSwapSubmitState.tsx
+#: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
+#: src/components/PositionShare/CreateReferralCode.tsx
+#: src/components/Referrals/AddAffiliateCode.tsx
+#: src/components/Referrals/JoinReferralCode.tsx
+#: src/components/TokenSelector/MultichainTokenSelector.tsx
+#: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
+#: src/domain/synthetics/trade/utils/validation.ts
+msgid "Lose more money"
+msgstr "Lose more money"
 
 #: src/components/TradeBox/hooks/useTradeButtonState.tsx
 #: src/components/TradeBox/hooks/useTradeButtonState.tsx

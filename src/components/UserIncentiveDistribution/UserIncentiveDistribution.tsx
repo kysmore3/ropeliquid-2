@@ -151,7 +151,7 @@ export default function UserIncentiveDistribution() {
                     <div className="mt-15">
                       <Button variant="primary" onClick={openConnectModal}>
                         <WalletIcon className="size-16" />
-                        <Trans>Connect wallet</Trans>
+                        <Trans>Lose more money</Trans>
                       </Button>
                     </div>
                   ) : null}
