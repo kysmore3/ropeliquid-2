@@ -1,5 +1,5 @@
 import cx from "classnames";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 import NestedTab from "./NestedTab";
 import RegularTab from "./RegularTab";
@@ -31,6 +31,14 @@ export default function Tabs<V extends string | number>({
   qa,
   rightContent,
 }: Props<V>) {
+  const [activeIndex, setActiveIndex] = React.useState<number | undefined>(
+    options.findIndex((opt) => (isNestedOption(opt) ? opt.options?.some((o) => o.value === selectedValue) : opt.value === selectedValue))
+  );
+
+  React.useEffect(() => {
+    const idx = options.findIndex((opt) => (isNestedOption(opt) ? opt.options?.some((o) => o.value === selectedValue) : opt.value === selectedValue));
+    setActiveIndex(idx === -1 ? undefined : idx);
+  }, [selectedValue, options]);
   return (
     <div
       data-qa={qa}
@@ -47,25 +55,32 @@ export default function Tabs<V extends string | number>({
           "gap-8": type === "inline" || type === "inline-primary",
         })}
       >
-        {options.map((opt) =>
-          isNestedOption(opt) ? (
+        {options.map((opt, idx) => {
+          const handleClick = (v: V) => {
+            setActiveIndex(idx);
+            onChange?.(v);
+          };
+
+          return isNestedOption(opt) ? (
             <NestedTab
-              key={opt.label?.toString()}
+              key={`${opt.label?.toString() ?? "nested"}-${idx}`}
               option={opt}
               selectedValue={selectedValue}
-              onOptionClick={onChange}
+              onOptionClick={handleClick}
             />
           ) : (
             <RegularTab
-              key={opt.value}
+              key={`${String(opt.value)}-${idx}`}
               option={opt}
               selectedValue={selectedValue}
-              onOptionClick={onChange}
+              selectedIndex={activeIndex}
+              index={idx}
+              onOptionClick={handleClick}
               regularOptionClassname={regularOptionClassname}
               type={type}
             />
-          )
-        )}
+          );
+        })}
       </div>
 
       {rightContent}

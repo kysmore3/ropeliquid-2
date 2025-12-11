@@ -70,9 +70,9 @@ export const colors: ColorTree = {
     primaryActive: { light: "#77070E98", dark: "#77070E98" },
   },
   fill: {
-    surfaceElevated50: { light: "#EDEDF280", dark: "#1E203380" },
+    surfaceElevated50: { light: "#EDEDF280", dark: "#77070E25" },
     surfaceElevated: { light: "#EDEDF2", dark: "#1E2033" },
-    surfaceElevatedHover: { light: "#EFEFEF", dark: "#8A0002" },
+    surfaceElevatedHover: { light: "#EFEFEF", dark: "#77070E25" },
     surfaceHover: { light: "#696D961A", dark: "#A0A3C41A" },
     accent: { light: "#8A0002", dark: "#8A0002" },
     glassBase: { light: "rgba(255, 255, 255, 0.1)", dark: "rgba(255, 255, 255, 0.06)", type: "rgba" },

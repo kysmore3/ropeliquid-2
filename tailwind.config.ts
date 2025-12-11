@@ -195,6 +195,9 @@ const config: Config = {
     },
     screens: { ...defaultConfig.theme?.screens, ...screensFromBreakpoints },
     extend: {
+      fontFamily: {
+        inter: ["InterVariable", "system-ui", "-apple-system", "sans-serif"],
+      },
       gridTemplateColumns: fromPairs(
         range(200, 501, 50).map((space) => [`auto-fill-${space}`, `repeat(auto-fill, minmax(${space}px, 1fr))`])
       ),

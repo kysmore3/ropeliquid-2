@@ -11,6 +11,8 @@ type Props<V extends string | number> = {
   regularOptionClassname?: string;
   qa?: string;
   type: "inline" | "block" | "inline-primary";
+  index?: number;
+  selectedIndex?: number | undefined;
 };
 
 export default function RegularTab<V extends string | number>({
@@ -20,8 +22,10 @@ export default function RegularTab<V extends string | number>({
   regularOptionClassname,
   qa,
   type,
+  index,
+  selectedIndex,
 }: Props<V>) {
-  const isActive = option.value === selectedValue;
+  const isActive = index !== undefined && selectedIndex !== undefined ? index === selectedIndex : option.value === selectedValue;
   const label = option.label || option.value;
   const optionClassName = isActive ? option.className?.active : option.className?.regular;
 

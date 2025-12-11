@@ -236,7 +236,7 @@ export function Curtain({
         <div
           data-qa={dataQa}
           ref={curtainRef}
-          className="text-body-medium fixed left-0 right-0 z-[901] flex flex-col rounded-t-4"
+          className="text-body-medium fixed left-0 right-0 z-[901] flex flex-col rounded-t-4 bg-white/6 backdrop-blur-[12px] saturate-[1.8] border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),_0_8px_32px_rgba(0,0,0,0.3)]"
           style={CURTAIN_STYLE}
         >
           <div

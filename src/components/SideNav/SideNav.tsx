@@ -14,8 +14,8 @@ import DocsIcon from "img/docs.svg?react";
 import EcosystemIcon from "img/ecosystem.svg?react";
 import EarnIcon from "img/ic_earn.svg?react";
 import LeaderboardIcon from "img/leaderboard.svg?react";
-import logoIcon from "img/logo-icon.svg";
-import LogoText from "img/logo-text.svg?react";
+import logoIcon from "img/ropeliquid-icon.svg";
+import LogoText from "img/ropeliquid-text_white.svg?react";
 import ReferralsIcon from "img/referrals.svg?react";
 import TradeIcon from "img/trade.svg?react";
 

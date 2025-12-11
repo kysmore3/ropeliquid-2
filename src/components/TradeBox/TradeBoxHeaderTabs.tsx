@@ -29,11 +29,22 @@ export function TradeBoxHeaderTabs({ isInCurtain }: { isInCurtain?: boolean }) {
   );
 
   const tabsOptions = useMemo(() => {
-    return Object.values(TradeType).map((type) => ({
-      value: type,
-      label: localizedTradeTypeLabels[type],
-      className: tradeTypeClassNames[type],
-    }));
+    return Object.values(TradeType).map((type) => {
+      // For the Long tab, render it as a Short visually and functionally
+      if (type === TradeType.Long) {
+        return {
+          value: TradeType.Short,
+          label: localizedTradeTypeLabels[TradeType.Short],
+          className: tradeTypeClassNames[TradeType.Short],
+        };
+      }
+
+      return {
+        value: type,
+        label: localizedTradeTypeLabels[type],
+        className: tradeTypeClassNames[type],
+      };
+    });
   }, [localizedTradeTypeLabels]);
 
   if (!isInCurtain) {

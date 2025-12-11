@@ -16,8 +16,12 @@ export function TradeBoxResponsiveContainer() {
     );
   }
 
-  return (
-    <Curtain header={<TradeBoxHeaderTabs isInCurtain />} dataQa="tradebox">
+    return (
+    <Curtain
+      header={<TradeBoxHeaderTabs isInCurtain />}
+      dataQa="tradebox"
+      className="bg-white/6 backdrop-blur-[12px] saturate-[1.8] border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),_0_8px_32px_rgba(0,0,0,0.3)]"
+    >
       <TradeBox isMobile={isTablet} />
     </Curtain>
   );

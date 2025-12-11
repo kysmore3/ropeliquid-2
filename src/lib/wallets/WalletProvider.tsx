@@ -12,7 +12,7 @@ import { getRainbowKitConfig } from "./rainbowKitConfig";
 
 const darkWalletTheme = merge(darkTheme(), {
   colors: {
-    modalBackground: "var(--color-slate-800)",
+    modalBackground: "#000000",
     accentColor: "var(--color-blue-500)",
     menuItemBackground: "var(--color-fill-surfaceHover)",
   },
@@ -24,7 +24,7 @@ const darkWalletTheme = merge(darkTheme(), {
 
 const lightWalletTheme = merge(lightTheme(), {
   colors: {
-    modalBackground: "var(--color-slate-900)",
+    modalBackground: "#8A000225",
     accentColor: "var(--color-blue-500)",
     menuItemBackground: "var(--color-fill-surfaceHover)",
   },
