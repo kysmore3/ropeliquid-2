@@ -20,7 +20,7 @@ import TooltipWithPortal from "components/Tooltip/TooltipWithPortal";
 import ChevronDownIcon from "img/ic_chevron_down.svg?react";
 import SettingsIcon from "img/ic_settings.svg?react";
 
-import SolanaNetworkItem from "./SolanaNetworkItem";
+
 import ModalWithPortal from "../Modal/ModalWithPortal";
 
 import "./NetworkDropdown.scss";
@@ -111,7 +111,7 @@ function DesktopDropdown({
             </Menu.Button>
             <Menu.Items
               as="div"
-              className="menu-items network-dropdown-items rounded-8 border-1/2 border-slate-600"
+              className="menu-items network-dropdown-items rounded-8 border-1/2 border-slate-600 glass"
               data-qa="networks-dropdown"
             >
               <div className="p-12 pb-8 text-13 font-medium text-typography-secondary">
@@ -158,9 +158,6 @@ function NetworkMenuItems({ networkOptions, chainId }: { networkOptions: Network
       {enabledNetworks.map((network) => (
         <NetworkMenuItem key={network.value} network={network} chainId={chainId} disabled={false} />
       ))}
-      <Menu.Item key="solana">
-        <SolanaNetworkItem />
-      </Menu.Item>
       {disabledNetworks.map((network) => (
         <NetworkMenuItem key={network.value} network={network} chainId={chainId} disabled={true} />
       ))}
@@ -239,10 +236,6 @@ function NetworkModalContent({
         {networkOptions.map((network) => {
           return <NetworkModalOption key={network.value} network={network} chainId={chainId} />;
         })}
-        <span className="network-dropdown-label more-options">
-          <Trans>More Options</Trans>
-        </span>
-        <SolanaNetworkItem />
         <div
           className="network-option"
           onClick={() => {

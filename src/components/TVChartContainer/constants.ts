@@ -26,33 +26,33 @@ const createChartStyleOverrides = (upColor: string, downColor: string): Partial<
   }, {});
 
 export const chartOverridesDark: Partial<WidgetOverrides> = {
-  "paneProperties.background": "#121421",
-  "paneProperties.backgroundGradientStartColor": "#121421",
-  "paneProperties.backgroundGradientEndColor": "#121421",
+  "paneProperties.background": "#2e0404",
+  "paneProperties.backgroundGradientStartColor": "#2e0404",
+  "paneProperties.backgroundGradientEndColor": "#2e0404",
   "paneProperties.backgroundType": "solid",
-  "paneProperties.vertGridProperties.color": "#363A5960",
+  "paneProperties.vertGridProperties.color": "#363A5900",
   "paneProperties.vertGridProperties.style": 2,
-  "paneProperties.horzGridProperties.color": "#363A5960",
+  "paneProperties.horzGridProperties.color": "#363A5900",
   "paneProperties.horzGridProperties.style": 2,
-  "mainSeriesProperties.priceLineColor": "#8B94B6AA",
+  "mainSeriesProperties.priceLineColor": "#77070E75",
   "scalesProperties.textColor": colors.typography["secondary"].dark,
   "mainSeriesProperties.statusViewStyle.showExchange": false,
-  ...createChartStyleOverrides(colors.green[500].dark, colors.red[500].dark),
+  ...createChartStyleOverrides(colors.red[500].light, colors.green[500].light),
 };
 
 export const chartOverridesLight: Partial<WidgetOverrides> = {
-  "paneProperties.background": "#FFFFFF",
-  "paneProperties.backgroundGradientStartColor": "#FFFFFF",
-  "paneProperties.backgroundGradientEndColor": "#FFFFFF",
+  "paneProperties.background": "#ffffff",
+  "paneProperties.backgroundGradientStartColor": "#ffffff",
+  "paneProperties.backgroundGradientEndColor": "#ffffff",
   "paneProperties.backgroundType": "solid",
-  "paneProperties.vertGridProperties.color": "#E0E0E0",
+  "paneProperties.vertGridProperties.color": "#E0E0E000",
   "paneProperties.vertGridProperties.style": 2,
-  "paneProperties.horzGridProperties.color": "#E0E0E0",
+  "paneProperties.horzGridProperties.color": "#E0E0E000",
   "paneProperties.horzGridProperties.style": 2,
-  "mainSeriesProperties.priceLineColor": "#6B7280AA",
+  "mainSeriesProperties.priceLineColor": "#77070E75",
   "scalesProperties.textColor": colors.typography["secondary"].light,
   "mainSeriesProperties.statusViewStyle.showExchange": false,
-  ...createChartStyleOverrides(colors.green[500].light, colors.red[500].light),
+  ...createChartStyleOverrides(colors.red[500].light, colors.green[500].light),
 };
 
 export const disabledFeaturesOnMobile: ChartingLibraryFeatureset[] = ["header_saveload", "header_fullscreen_button"];

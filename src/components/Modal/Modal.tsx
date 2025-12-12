@@ -118,7 +118,7 @@ export default function Modal({
 
             <div
               className={cx(
-                "Modal-content flex flex-col",
+                "Modal-content flex flex-col glass",
                 {
                   "gap-16": contentPadding,
                   "max-md:w-full max-md:!rounded-t-0": withMobileBottomPosition,

@@ -46,13 +46,14 @@ export function OneClickPromoBanner({ openSettings, isShort }: { openSettings: (
 
   return (
     <ColorfulBanner
-      color="blue"
+      color="oneclickpromo"
       icon={OneClickIcon}
       onClose={() => setIsOneClickPromoHidden(true)}
       onClick={onClickEnable}
       className="min-w-[180px] cursor-pointer"
+      withBorder={false}
     >
-      <div>{isShort ? <Trans>Try Express</Trans> : <Trans>Try Express Trading</Trans>}</div>
+      <div>{isShort ? <Trans>Try Express</Trans> : <Trans>Set up your settings now</Trans>}</div>
     </ColorfulBanner>
   );
 }

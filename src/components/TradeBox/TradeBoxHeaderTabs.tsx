@@ -61,13 +61,48 @@ export function TradeBoxHeaderTabs({ isInCurtain }: { isInCurtain?: boolean }) {
     );
   }
 
+  const mobileOptions = useMemo(() => [
+    "short-1",
+    "short-2",
+    TradeType.Swap,
+  ], []);
+
+  const mobileOptionLabels = useMemo(() => {
+    return {
+      ["short-1"]: localizedTradeTypeLabels[TradeType.Short],
+      ["short-2"]: localizedTradeTypeLabels[TradeType.Short],
+      [TradeType.Swap]: localizedTradeTypeLabels[TradeType.Swap],
+    } as Record<string | number, any>;
+  }, [localizedTradeTypeLabels]);
+
+  const mobileOptionClassnames = useMemo(() => {
+    return {
+      ["short-1"]: mobileTradeTypeClassNames[TradeType.Short],
+      ["short-2"]: mobileTradeTypeClassNames[TradeType.Short],
+      [TradeType.Swap]: mobileTradeTypeClassNames[TradeType.Swap],
+    } as Record<string | number, string>;
+  }, []);
+
+  const selectedMobileOption = tradeType === TradeType.Swap ? TradeType.Swap : "short-1";
+
+  const onMobileChange = useCallback(
+    (opt: string | number) => {
+      if (opt === "short-1" || opt === "short-2") {
+        onTradeTypeChange(TradeType.Short);
+      } else {
+        onTradeTypeChange(opt as TradeType);
+      }
+    },
+    [onTradeTypeChange]
+  );
+
   return (
     <SwipeTabs
-      options={OPTIONS}
-      optionLabels={localizedTradeTypeLabels}
-      option={tradeType}
-      onChange={onTradeTypeChange}
-      optionClassnames={mobileTradeTypeClassNames}
+      options={mobileOptions}
+      optionLabels={mobileOptionLabels}
+      option={selectedMobileOption}
+      onChange={onMobileChange}
+      optionClassnames={mobileOptionClassnames}
       qa="trade-direction"
     />
   );

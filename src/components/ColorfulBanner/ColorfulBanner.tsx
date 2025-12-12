@@ -27,6 +27,11 @@ const colorSchemas = {
     icon: "text-yellow-300",
     bg: "bg-yellow-300 bg-opacity-20",
   },
+  oneclickpromo: {
+    border: "",
+    bg: "bg-[#ffffff] dark:bg-[#8A000250]",
+    icon: "text-blue-300",
+  },
 };
 
 export function ColorfulBanner({

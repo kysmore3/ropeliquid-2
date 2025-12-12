@@ -51,44 +51,28 @@ export default function TradeBoxLongShortInfoIcon({ tradePlace, tradeType, isMob
             <Trans>
               {typeString} Long Limit: {getTradeTypeLabel(TradeMode.Limit, tradePlace)} a long position when the price
               is below the trigger price.
-            </Trans>{" "}
-            <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#limit-orders">
-              <Trans>Read more</Trans>
-            </ExternalLink>
-            .
+            </Trans>
           </li>
         ) : null}
         <li className={LI_CLASS_NAME}>
           <Trans>
             {typeString} Long TP/SL: {getTradeTypeLabel(TradeMode.Trigger, tradePlace)} a long position when the trigger
             price is reached.
-          </Trans>{" "}
-          <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#take-profit-and-stop-loss-orders">
-            <Trans>Read more</Trans>
-          </ExternalLink>
-          .
+          </Trans>
         </li>
         {isTradeBox ? (
           <li className={LI_CLASS_NAME}>
             <Trans>
               {typeString} Long Stop Market: {getTradeTypeLabel(TradeMode.StopMarket, tradePlace)} a short position when
               the price is below the trigger price.
-            </Trans>{" "}
-            <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#stop-market-orders">
-              <Trans>Read more</Trans>
-            </ExternalLink>
-            .
+            </Trans>
           </li>
         ) : null}
         <li className={LI_CLASS_NAME}>
           <Trans>
             {typeString} Long TWAP: {getTradeTypeLabel(TradeMode.Twap, tradePlace)} a long position in evenly
             distributed parts over a specified time.
-          </Trans>{" "}
-          <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#twap-orders">
-            <Trans>Read more</Trans>
-          </ExternalLink>
-          .
+          </Trans>
         </li>
       </ul>
     ),
@@ -105,44 +89,28 @@ export default function TradeBoxLongShortInfoIcon({ tradePlace, tradeType, isMob
             <Trans>
               {typeString} Short Limit: {getTradeTypeLabel(TradeMode.Limit, tradePlace)} a short position when the price
               is above the trigger price.
-            </Trans>{" "}
-            <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#limit-orders">
-              <Trans>Read more</Trans>
-            </ExternalLink>
-            .
+            </Trans>
           </li>
         ) : null}
         <li className={LI_CLASS_NAME}>
           <Trans>
             {typeString} Short TP/SL: {getTradeTypeLabel(TradeMode.Trigger, tradePlace)} a short position when the
             trigger price is reached.
-          </Trans>{" "}
-          <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#take-profit-and-stop-loss-orders">
-            <Trans>Read more</Trans>
-          </ExternalLink>
-          .
+          </Trans>
         </li>
         {isTradeBox ? (
           <li className={LI_CLASS_NAME}>
             <Trans>
               {typeString} Short Stop Market: {getTradeTypeLabel(TradeMode.StopMarket, tradePlace)} a short position
               when the price is below the trigger price.
-            </Trans>{" "}
-            <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#stop-market-orders">
-              <Trans>Read more</Trans>
-            </ExternalLink>
-            .
+            </Trans>
           </li>
         ) : null}
         <li className={LI_CLASS_NAME}>
           <Trans>
             {typeString} Short TWAP: {getTradeTypeLabel(TradeMode.Twap, tradePlace)} a short position in evenly
             distributed parts over a specified time.
-          </Trans>{" "}
-          <ExternalLink href="https://docs.gmx.io/docs/trading/v2/#twap-orders">
-            <Trans>Read more</Trans>
-          </ExternalLink>
-          .
+          </Trans>
         </li>
       </ul>
     ),

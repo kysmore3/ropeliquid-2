@@ -24,7 +24,7 @@ const darkWalletTheme = merge(darkTheme(), {
 
 const lightWalletTheme = merge(lightTheme(), {
   colors: {
-    modalBackground: "#8A000225",
+    modalBackground: "#ffffff",
     accentColor: "var(--color-blue-500)",
     menuItemBackground: "var(--color-fill-surfaceHover)",
   },

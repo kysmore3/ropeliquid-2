@@ -78,8 +78,8 @@ msgid "receive"
 msgstr "erhalten"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
-msgid "GMX Referrals Dashboard"
-msgstr "GMX-Referrals-Dashboard"
+msgid "Ropeliquid Referrals Dashboard"
+msgstr "Ropeliquid-Referrals-Dashboard"
 
 #: src/components/PositionEditor/usePositionEditorButtonState.tsx
 msgid "Decrease the withdraw size to match the max. <0>Read more</0>.<1/><2/><3>Set max withdrawal</3>"
@@ -215,7 +215,7 @@ msgid "Total size"
 msgstr "Gesamtgröße"
 
 #: src/components/OneClickPromoBanner/OneClickPromoBanner.tsx
-msgid "Try Express Trading"
+msgid "Set up your settings now"
 msgstr "Versuche Express-Trading"
 
 #: src/components/OrderItem/OrderItem.tsx
@@ -2280,8 +2280,8 @@ msgid "TVL"
 msgstr "TVL"
 
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "Your GMX Account balance, usable for trading from any supported chain. <0>Read more</0>."
-msgstr "Ihr GMX-Konto-Saldo, nutzbar für den Handel von jeder unterstützten Chain. <0>Mehr lesen</0>."
+msgid "Your Ropeliquid Account balance, usable for trading from any supported chain."
+msgstr "Ihr Ropeliquid-Konto-Saldo, nutzbar für den Handel von jeder unterstützten Chain."
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
 msgid "Shift Fee"
@@ -2324,8 +2324,8 @@ msgid "The distribution history for your incentives, airdrops, and prizes will b
 msgstr "Die Verteilungshistorie für Ihre Anreize, Airdrops und Preise wird hier angezeigt."
 
 #: src/components/SettingsModal/TradingSettings.tsx
-msgid "You sign each transaction off-chain. Trades use GMX-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
-msgstr "Sie unterschreiben jede Transaktion off-chain. Trades nutzen GMX-gesponserte Premium-RPCs für Zuverlässigkeit, sogar bei Netzwerküberlastung. Gas-Zahlungen in {gasPaymentTokensText}."
+msgid "You sign each transaction off-chain. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
+msgstr "Sie unterschreiben jede Transaktion off-chain. Trades nutzen Ropeliquid-gesponserte Premium-RPCs für Zuverlässigkeit, sogar bei Netzwerküberlastung. Gas-Zahlungen in {gasPaymentTokensText}."
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Bridge and swap"
@@ -6770,7 +6770,7 @@ msgstr "Anspruch bestätigen"
 
 #: src/components/GmxAccountModal/GmxAccountModal.tsx
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "GMX Account Balance"
+msgid "Ropeliquid Account Balance"
 msgstr "GMX-Konto-Saldo"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx

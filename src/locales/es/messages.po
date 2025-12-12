@@ -215,7 +215,7 @@ msgid "Total size"
 msgstr "Tamaño total"
 
 #: src/components/OneClickPromoBanner/OneClickPromoBanner.tsx
-msgid "Try Express Trading"
+msgid "Set up your settings now"
 msgstr "Prueba Trading Express"
 
 #: src/components/OrderItem/OrderItem.tsx
@@ -2280,8 +2280,8 @@ msgid "TVL"
 msgstr "TVL"
 
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "Your GMX Account balance, usable for trading from any supported chain. <0>Read more</0>."
-msgstr "Tu saldo de Cuenta GMX, utilizable para trading desde cualquier cadena soportada. <0>Leer más</0>."
+msgid "Your Ropeliquid Account balance, usable for trading from any supported chain."
+msgstr "Tu saldo de Cuenta Ropeliquid, utilizable para trading desde cualquier cadena soportada."
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
 msgid "Shift Fee"
@@ -2324,8 +2324,8 @@ msgid "The distribution history for your incentives, airdrops, and prizes will b
 msgstr "El historial de distribución para tus incentivos, airdrops y premios se mostrará aquí."
 
 #: src/components/SettingsModal/TradingSettings.tsx
-msgid "You sign each transaction off-chain. Trades use GMX-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
-msgstr "Firmas cada transacción off-chain. Las operaciones usan RPCs premium patrocinados por GMX para fiabilidad, incluso durante congestión de red. Pagos de gas en {gasPaymentTokensText}."
+msgid "You sign each transaction off-chain. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
+msgstr "Firmas cada transacción off-chain. Las operaciones usan RPCs premium patrocinados por Ropeliquid para fiabilidad, incluso durante congestión de red. Pagos de gas en {gasPaymentTokensText}."
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Bridge and swap"
@@ -5826,16 +5826,16 @@ msgid "No rebates distribution history yet."
 msgstr "Aún no hay historial de distribución de reembolsos."
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
-msgid "GMX Governance"
-msgstr "Gobernanza GMX"
+msgid "Ropeliquid Governance"
+msgstr "Gobernanza Ropeliquid"
 
 #: src/domain/synthetics/orders/utils.tsx
 msgid "trigger price"
 msgstr "precio de activación"
 
 #: src/components/SettingsModal/TradingSettings.tsx
-msgid "GMX executes transactions for you without individual signing, providing a seamless, CEX-like experience. Trades use GMX-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
-msgstr "GMX ejecuta transacciones por ti sin firma individual, proporcionando una experiencia fluida como CEX. Las operaciones usan RPCs premium patrocinados por GMX para fiabilidad, incluso durante congestión de red. Pagos de gas en {gasPaymentTokensText}."
+msgid "Ropeliquid executes transactions for you without individual signing, providing a seamless, CEX-like experience. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
+msgstr "Ropeliquid ejecuta transacciones por ti sin firma individual, proporcionando una experiencia fluida como CEX. Las operaciones usan RPCs premium patrocinados por Ropeliquid para fiabilidad, incluso durante congestión de red. Pagos de gas en {gasPaymentTokensText}."
 
 #: src/components/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
@@ -6658,8 +6658,8 @@ msgid "Failed Withdraw"
 msgstr "Retiro Fallido"
 
 #: src/pages/Referrals/Referrals.tsx
-msgid "Get fee discounts and earn rebates through the GMX referral program.<0/>For more information, please read the <1>referral program details</1>."
-msgstr "Obtenga descuentos en comisiones y gane reembolsos a través del programa de referidos de GMX.<0/>Para más información, lea los <1>detalles del programa de referidos</1>."
+msgid "Get fee discounts and earn rebates through the Ropeliquid referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgstr "Obtenga descuentos en comisiones y gane reembolsos a través del programa de referidos de Ropeliquid.<0/>Para más información, lea los <1>detalles del programa de referidos</1>."
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy or Transfer {nativeTokenSymbol} to {chainName}"
@@ -6770,7 +6770,7 @@ msgstr "Confirmar Reclamación"
 
 #: src/components/GmxAccountModal/GmxAccountModal.tsx
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "GMX Account Balance"
+msgid "Ropeliquid Account Balance"
 msgstr "Saldo de Cuenta GMX"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx

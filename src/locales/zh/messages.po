@@ -215,7 +215,7 @@ msgid "Total size"
 msgstr "总规模"
 
 #: src/components/OneClickPromoBanner/OneClickPromoBanner.tsx
-msgid "Try Express Trading"
+msgid "Set up your settings now"
 msgstr "尝试快速交易"
 
 #: src/components/OrderItem/OrderItem.tsx
@@ -6770,7 +6770,7 @@ msgstr "确认领取"
 
 #: src/components/GmxAccountModal/GmxAccountModal.tsx
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "GMX Account Balance"
+msgid "Ropeliquid Account Balance"
 msgstr "GMX 账户余额"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx

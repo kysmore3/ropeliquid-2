@@ -35,7 +35,7 @@ const AvailableToTradeAssetsTitle = () => {
         role="button"
         onClick={() => setIsVisibleOrView("main")}
       />
-      {srcChainId !== undefined ? <Trans>GMX Account Balance</Trans> : <Trans>Available to Trade Assets</Trans>}
+      {srcChainId !== undefined ? <Trans>Ropeliquid Account Balance</Trans> : <Trans>Available to Trade Assets</Trans>}
     </div>
   );
 };
@@ -54,9 +54,9 @@ const TransferDetailsTitle = () => {
         onClick={() => setIsVisibleOrView("main")}
       />
       {selectedTransfer?.operation === "withdrawal" ? (
-        <Trans>Withdrawal from GMX Account</Trans>
+        <Trans>Withdrawal from Ropeliquid Account</Trans>
       ) : (
-        <Trans>Deposit to GMX Account</Trans>
+        <Trans>Deposit to Ropeliquid Account</Trans>
       )}
     </div>
   );
@@ -72,7 +72,7 @@ const DepositTitle = () => {
         role="button"
         onClick={() => setIsVisibleOrView("main")}
       />
-      <Trans>Deposit to GMX Account</Trans>
+      <Trans>Deposit to Ropeliquid Account</Trans>
     </div>
   );
 };
@@ -110,13 +110,13 @@ const WithdrawTitle = () => {
         role="button"
         onClick={() => setIsVisibleOrView("main")}
       />
-      <Trans>Withdraw from GMX Account</Trans>
+      <Trans>Withdraw from Ropeliquid Account</Trans>
     </div>
   );
 };
 
 const VIEW_TITLE: Record<GmxAccountModalView, React.ReactNode> = {
-  main: <Trans>GMX Account</Trans>,
+  main: <Trans>Ropeliquid Account</Trans>,
   availableToTradeAssets: <AvailableToTradeAssetsTitle />,
   transferDetails: <TransferDetailsTitle />,
   deposit: <DepositTitle />,

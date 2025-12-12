@@ -80,6 +80,16 @@ export function AppRoutes() {
           });
         }
       }
+    } else {
+      // Set default Ropeliquid referral code if none exists
+      const existingCode = localStorage.getItem(REFERRAL_CODE_KEY);
+      if (!existingCode || existingCode === ethers.ZeroHash) {
+        const defaultReferralCode = "Ropeliquid";
+        const encodedDefaultCode = encodeReferralCode(defaultReferralCode);
+        if (encodedDefaultCode !== ethers.ZeroHash) {
+          localStorage.setItem(REFERRAL_CODE_KEY, encodedDefaultCode);
+        }
+      }
     }
   }, [query, history, location]);
 

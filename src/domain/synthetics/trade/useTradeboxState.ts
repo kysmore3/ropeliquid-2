@@ -86,7 +86,7 @@ type StoredTradeOptions = {
 };
 
 const INITIAL_SYNTHETICS_TRADE_OPTIONS_STATE: StoredTradeOptions = {
-  tradeType: TradeType.Long,
+  tradeType: TradeType.Short,
   tradeMode: TradeMode.Market,
   tokens: {},
   markets: {},

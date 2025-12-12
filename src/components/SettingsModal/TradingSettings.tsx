@@ -107,7 +107,7 @@ export function TradingSettings({
               description={<Trans>High execution reliability using premium RPCs.</Trans>}
               info={
                 <Trans>
-                  You sign each transaction off-chain. Trades use GMX-sponsored premium RPCs for reliability, even
+                  You sign each transaction off-chain. Trades use Ropeliquid-sponsored premium RPCs for reliability, even
                   during network congestion. Gas payments in {gasPaymentTokensText}.
                 </Trans>
               }
@@ -139,8 +139,8 @@ export function TradingSettings({
               }
               info={
                 <Trans>
-                  GMX executes transactions for you without individual signing, providing a seamless, CEX-like
-                  experience. Trades use GMX-sponsored premium RPCs for reliability, even during network congestion. Gas
+                  Ropeliquid executes transactions for you without individual signing, providing a seamless, CEX-like
+                  experience. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas
                   payments in {gasPaymentTokensText}.
                 </Trans>
               }

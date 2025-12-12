@@ -162,10 +162,9 @@ function Referrals() {
             subtitle={
               !isBotanix ? (
                 <Trans>
-                  Get fee discounts and earn rebates through the GMX referral program.
+                  Get fee discounts and earn rebates through the Ropeliquid referral program.
                   <br />
-                  For more information, please read the{" "}
-                  <ExternalLink href="https://docs.gmx.io/docs/referrals">referral program details</ExternalLink>.
+                  For more information, please read the referral program details. {" "}
                 </Trans>
               ) : undefined
             }

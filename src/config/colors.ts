@@ -3,8 +3,8 @@ import { ColorTree } from "lib/generateColorConfig";
 export const colors: ColorTree = {
   blue: {
     100: { light: "#A4C3F9", dark: "#A4C3F9" },
-    300: { light: "#7885FF", dark: "#ffffff" },
-    400: { light: "#2D42FC", dark: "#2D42FC" },
+    300: { light: "#000000", dark: "#ffffff" },
+    400: { light: "#77070E", dark: "#77070E" },
     500: { light: "#3d51ff", dark: "#3d51ff" },
     600: { light: "#77070E", dark: "#77070E" },
     700: { light: "#2e3dcd", dark: "#2e3dcd" },
@@ -15,11 +15,11 @@ export const colors: ColorTree = {
     900: { light: "#E2E5FD", dark: "#1E223C" },
   },
   slate: {
-    100: { light: "#696D96", dark: "#a0a3c4" },
+    100: { light: "#000000", dark: "#ffffff" },
     400: { light: "#9FA3BC", dark: "#BEC0DA" },
     500: { light: "#C4C6D5", dark: "#646a8f" },
-    600: { light: "#D4D4E2", dark: "#8A0002" },
-    700: { light: "#DADAE7", dark: "#8A000225" },
+    600: { light: "#00000025", dark: "#8A0002" },
+    700: { light: "#00000025", dark: "#8A000225" },
     750: { light: "#D4D6E2", dark: "#17182c" },
     800: { light: "#EDEDF2", dark: "#8A000225" },
     900: { light: "#FCFCFC", dark: "#8A000225" },
@@ -80,7 +80,7 @@ export const colors: ColorTree = {
   },
   typography: {
     primary: { light: "#000000", dark: "#ffffff" },
-    secondary: { light: "#696D96", dark: "#a0a3c4" },
-    inactive: { light: "#C4C4D5", dark: "#3E4361" },
+    secondary: { light: "#333333", dark: "#cecece" },
+    inactive: { light: "#606060", dark: "#8e8e8e" },
   },
 };

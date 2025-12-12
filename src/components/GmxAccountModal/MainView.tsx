@@ -200,13 +200,6 @@ const Toolbar = ({ account }: { account: string }) => {
             <ExplorerIcon />
           </Button>
         </TooltipWithPortal>
-        {showNotify && (
-          <TooltipWithPortal content={t`Notifications`} position="bottom" tooltipClassName="!min-w-max" variant="none">
-            <Button variant="secondary" size="small" className={buttonClassName} onClick={handleNotificationsClick}>
-              <BellIcon />
-            </Button>
-          </TooltipWithPortal>
-        )}
 
         <TooltipWithPortal content={t`Settings`} position="bottom" tooltipClassName="!min-w-max" variant="none">
           <Button variant="secondary" size="small" className={buttonClassName} onClick={handleSettingsClick}>
@@ -226,8 +219,7 @@ const Toolbar = ({ account }: { account: string }) => {
 function GmxAccountBalanceTooltipContent() {
   return (
     <Trans>
-      Your GMX Account balance, usable for trading from any supported chain.{" "}
-      <ExternalLink href="https://docs.gmx.io/docs/trading/v2#multichain-trading">Read more</ExternalLink>.
+      Your Ropeliquid Account balance, usable for trading from any supported chain.
     </Trans>
   );
 }
@@ -254,7 +246,7 @@ function SettlementChainBalance() {
         <SyntheticsInfoRow
           label={
             <TooltipWithPortal content={<GmxAccountBalanceTooltipContent />} variant="iconStroke">
-              <Trans>GMX Account Balance</Trans>
+              <Trans>Ropeliquid Account Balance</Trans>
             </TooltipWithPortal>
           }
           className="py-4"

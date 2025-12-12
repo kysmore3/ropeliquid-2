@@ -215,7 +215,7 @@ msgid "Total size"
 msgstr "총 크기"
 
 #: src/components/OneClickPromoBanner/OneClickPromoBanner.tsx
-msgid "Try Express Trading"
+msgid "Set up your settings now"
 msgstr "익스프레스 트레이딩 시도"
 
 #: src/components/OrderItem/OrderItem.tsx
@@ -6770,7 +6770,7 @@ msgstr "수령 확인"
 
 #: src/components/GmxAccountModal/GmxAccountModal.tsx
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "GMX Account Balance"
+msgid "Ropeliquid Account Balance"
 msgstr "GMX 계정 잔액"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx

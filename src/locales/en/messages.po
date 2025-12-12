@@ -216,7 +216,7 @@ msgstr "Total size"
 
 #: src/components/OneClickPromoBanner/OneClickPromoBanner.tsx
 msgid "Try Express Trading"
-msgstr "Try Express Trading"
+msgstr "Set up your settings now"
 
 #: src/components/OrderItem/OrderItem.tsx
 msgid "Note that there may be rare cases where the order cannot be executed, for example, if the chain is down and no oracle reports are produced or if there is not enough available liquidity."
@@ -687,21 +687,39 @@ msgstr "Limit price above mark price"
 #: src/components/TVChart/ChartHeader.tsx
 msgid "Open Interest (<0>{longOIPercentage}</0>/<1>{shortOIPercentage}</1>)"
 msgstr "Open Interest (<0>{longOIPercentage}</0>/<1>{shortOIPercentage}</1>)"
+#: src/components/TVChart/Chart.tsx
+msgid "This simulated depth chart offers a hypothetical orderbook-style view of Ropeliquid liquidity—it's not how trades actually execute. Opens always execute at the mark price with zero impact applied, so any shown execution price for opening is purely virtual. The actual net price impact, applied only on closes, sums the displayed open and close impacts but is capped at 0.5%."
+msgstr "This simulated depth chart offers a hypothetical orderbook-style view of Ropeliquid liquidity—it's not how trades actually execute. Opens always execute at the mark price with zero impact applied, so any shown execution price for opening is purely virtual. The actual net price impact, applied only on closes, sums the displayed open and close impacts but is capped at 0.5%."
 
 #: src/lib/wallets/connecters/binanceW3W/binanceWallet.ts
 msgid "Create or Import a Wallet"
+#: src/components/SettingsModal/DisplaySettings.tsx
+msgid "Technically, net price impact breaks down into stored price impact (for increase orders) and close price impact (for decrease orders). This setting shows both in the net value tooltip and close modal execution details, plus the stored price impact for increase orders."
+msgstr "Technically, net price impact breaks down into stored price impact (for increase orders) and close price impact (for decrease orders). This setting shows both in the net value tooltip and close modal execution details, plus the stored price impact for increase orders."
 msgstr "Create or Import a Wallet"
 
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
+#: src/components/GmxAccountModal/MainView.tsx
+msgid "Your Ropeliquid Account balance, usable for trading from any supported chain."
+msgstr "Your Ropeliquid Account balance, usable for trading from any supported chain."
 msgid "Networks and Settings"
 msgstr "Networks and Settings"
 
+#: src/components/SettingsModal/TradingSettings.tsx
+msgid "You sign each transaction off-chain. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
+msgstr "You sign each transaction off-chain. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
 #: src/components/SettingsModal/SettingsModal.tsx
 msgid "Max network fee buffer precision is 0.01%"
 msgstr "Max network fee buffer precision is 0.01%"
+#: src/components/SettingsModal/TradingSettings.tsx
+msgid "Ropeliquid executes transactions for you without individual signing, providing a seamless, CEX-like experience. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
+msgstr "Ropeliquid executes transactions for you without individual signing, providing a seamless, CEX-like experience. Trades use Ropeliquid-sponsored premium RPCs for reliability, even during network congestion. Gas payments in {gasPaymentTokensText}."
 
 #: src/components/OrderEditor/OrderEditor.tsx
 msgid "Max. Leverage Exceeded"
+#: src/pages/Ecosystem/ecosystemConstants.tsx
+msgid "Ropeliquid Referrals Dashboard"
+msgstr "Ropeliquid Referrals Dashboard"
 msgstr "Max. Leverage Exceeded"
 
 #: src/components/ChartTokenSelector/ChartTokenSelector.tsx
@@ -6770,8 +6788,8 @@ msgstr "Confirm Claim"
 
 #: src/components/GmxAccountModal/GmxAccountModal.tsx
 #: src/components/GmxAccountModal/MainView.tsx
-msgid "GMX Account Balance"
-msgstr "GMX Account Balance"
+msgid "Ropeliquid Account Balance"
+msgstr "Ropeliquid Account Balance"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "GMX community discussion"

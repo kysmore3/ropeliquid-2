@@ -88,16 +88,7 @@ export function AddressDropdownWithoutMultichain({ account }: { account: string 
                 </p>
               </ExternalLink>
             </Menu.Item>
-            {!isBotanix ? (
-              <Menu.Item>
-                <div className="menu-item" onClick={openNotifyModal}>
-                  <BellIcon className="ml-2 size-20 pt-2" />
-                  <p>
-                    <Trans>Alerts</Trans>
-                  </p>
-                </div>
-              </Menu.Item>
-            ) : null}
+
             <Menu.Item>
               <div className="menu-item" onClick={handleDisconnect}>
                 <DisconnectIcon width={20} className="size-20" />
