@@ -154,11 +154,6 @@ export async function approveTokens({
           <div>
             <Trans>
               There is not enough {nativeToken.symbol} in your account on {networkName} to send this transaction.
-              <br />
-              <br />
-              <Link to="/buy_gmx#bridge">
-                Buy or Transfer {nativeToken.symbol} to {networkName}
-              </Link>
             </Trans>
           </div>
         );

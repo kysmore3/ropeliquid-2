@@ -14,7 +14,7 @@ import TVChartContainer from "components/TVChartContainer/TVChartContainer";
 
 import "./TVChart.scss";
 
-const DEFAULT_PERIOD = "5m";
+const DEFAULT_PERIOD = "1m";
 
 export function TVChart() {
   const { chainId } = useChainId();

@@ -167,11 +167,7 @@ export function PriceImpactFeesRow() {
             content={
               <Trans>
                 There is no price impact for increase orders, orders are filled at the mark price. Price impact is
-                applied during decrease orders.{" "}
-                <ExternalLink href={"https://docs.gmx.io/docs/trading/v2#price-impact-and-price-impact-rebates"} newTab>
-                  Read more
-                </ExternalLink>
-                .
+                applied during decrease orders.
               </Trans>
             }
           />

@@ -17,7 +17,7 @@ export const colors: ColorTree = {
   slate: {
     100: { light: "#000000", dark: "#ffffff" },
     400: { light: "#9FA3BC", dark: "#BEC0DA" },
-    500: { light: "#C4C6D5", dark: "#646a8f" },
+    500: { light: "#00000025", dark: "#ffffff80" },
     600: { light: "#00000025", dark: "#8A0002" },
     700: { light: "#00000025", dark: "#8A000225" },
     750: { light: "#D4D6E2", dark: "#17182c" },
@@ -64,7 +64,7 @@ export const colors: ColorTree = {
   black: { light: "#000000", dark: "#000000" },
   button: {
     secondary: { light: "#E0E0E8", dark: "#8A000225" },
-    secondaryHover: { light: "#dadce8", dark: "#282d46" },
+    secondaryHover: { light: "#dadce8", dark: "#8A000250" },
     secondaryDisabled: { light: "#E0E0E8", dark: "#1e2033" },
     primaryHover: { light: "#77070E98", dark: "#77070E98" },
     primaryActive: { light: "#77070E98", dark: "#77070E98" },

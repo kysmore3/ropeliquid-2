@@ -1268,8 +1268,8 @@ export function getStakingProcessedData(
 }
 
 export function getPageTitle(data) {
-  const title = t`Decentralized Perpetual Exchange | GMX`;
-  return `${data} | ${title}`;
+  const title = t`§ Ropeliquid`;
+  return `${data}  ${title}`;
 }
 
 export function isHashZero(value) {

@@ -77,9 +77,11 @@ import { TradeHistory } from "components/TradeHistory/TradeHistory";
 import ShareClosedPosition from "components/TradeHistory/TradeHistoryRow/ShareClosedPosition";
 import { Chart } from "components/TVChart/Chart";
 import ChartHeader from "components/TVChart/ChartHeader";
+import { useTheme } from "context/ThemeContext/ThemeContext";
 
 import logoIcon from "img/ropeliquid-icon.svg";
-import LogoText from "img/ropeliquid-text_white.svg?react";
+import LogoTextDark from "img/ropeliquid-text_white.svg?react";
+import LogoTextLight from "img/ropeliquid-text.svg?react";
 
 export type Props = {
   openSettings: () => void;
@@ -96,6 +98,8 @@ export function SyntheticsPage(p: Props) {
   const { openSettings } = p;
   const { chainId } = useChainId();
   const { account } = useWallet();
+  const { theme } = useTheme();
+  const LogoText = theme === "dark" ? LogoTextDark : LogoTextLight;
   const calcSelector = useCalcSelector();
   const { setPendingTxns } = usePendingTxns();
 
@@ -192,7 +196,7 @@ export function SyntheticsPage(p: Props) {
 
     const title = getPageTitle(
       currentTokenPriceStr +
-        ` | ${prefix}${chartToken?.symbol}${chartToken?.symbol ? " " : ""}${chartToken?.isStable ? "" : "USD"}`
+        ` Short ${prefix}${chartToken?.symbol}`
     );
     document.title = title;
   }, [chartToken, isSwap]);

@@ -130,11 +130,6 @@ export function getTxnErrorToast(
       toastParams.errorContent = (
         <Trans>
           There is not enough {nativeToken.symbol} in your account on {getChainName(chainId)} to send this transaction.
-          <br />
-          <br />
-          <Link className="underline" to="/buy_gmx#bridge">
-            Buy or Transfer {nativeToken.symbol} to {getChainName(chainId)}
-          </Link>
         </Trans>
       );
       break;

@@ -203,7 +203,11 @@ export function useTradeboxState(
         }
       }
 
-      const market = availableTokensOptions.sortedAllMarkets?.at(0);
+      // Prefer ETH market for new users, fallback to first available market
+      const ethMarket = availableTokensOptions.sortedAllMarkets?.find(
+        (m) => m.indexToken.address === "0x0000000000000000000000000000000000000000"
+      );
+      const market = ethMarket || availableTokensOptions.sortedAllMarkets?.at(0);
 
       if (!market) {
         return;

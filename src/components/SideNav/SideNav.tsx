@@ -4,6 +4,7 @@ import { ReactNode, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { useLocalStorageSerializeKey } from "lib/localStorage";
+import { useTheme } from "context/ThemeContext/ThemeContext";
 
 import ExternalLink from "components/ExternalLink/ExternalLink";
 
@@ -15,7 +16,8 @@ import EcosystemIcon from "img/ecosystem.svg?react";
 import EarnIcon from "img/ic_earn.svg?react";
 import LeaderboardIcon from "img/leaderboard.svg?react";
 import logoIcon from "img/ropeliquid-icon.svg";
-import LogoText from "img/ropeliquid-text.svg?react";
+import LogoTextDark from "img/ropeliquid-text_white.svg?react";
+import LogoTextLight from "img/ropeliquid-text.svg?react";
 import ReferralsIcon from "img/referrals.svg?react";
 import TradeIcon from "img/trade.svg?react";
 
@@ -61,6 +63,9 @@ export const DocsNavItem = ({ isCollapsed }: { isCollapsed: boolean | undefined 
 );
 
 export function LogoSection({ isCollapsed }: { isCollapsed: boolean | undefined }) {
+  const { theme } = useTheme();
+  const LogoText = theme === "dark" ? LogoTextDark : LogoTextLight;
+
   return (
     <Link
       to="/"

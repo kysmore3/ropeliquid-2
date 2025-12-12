@@ -4,14 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "VITE_APP_VERSION=$(git rev-parse HEAD) vite --port 3010 --host",
-    "start-home": "yarn lingui:prepare && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e development-home vite --port 3010 --config vite.landing.config.ts",
-    "start-app": "yarn lingui:prepare && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e development-app vite --port 3011",
-    "build": "VITE_APP_VERSION=$(git rev-parse HEAD) vite build",
-    "build:analyze": "VITE_APP_VERSION=$(git rev-parse HEAD) vite build --mode analyze",
-    "build-home": "VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-home vite build --config vite.landing.config.ts",
-    "build-home:analyze": "VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-home vite build --config vite.landing.config.ts --mode analyze",
-    "build-app": "VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-app vite build",
+    "copy-favicon": "bash scripts/copy-favicon.sh",
+    "start": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) vite --port 3010 --host",
+    "start-home": "yarn copy-favicon && yarn lingui:prepare && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e development-home vite --port 3010 --config vite.landing.config.ts",
+    "start-app": "yarn copy-favicon && yarn lingui:prepare && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e development-app vite --port 3011",
+    "build": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) vite build",
+    "build:analyze": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) vite build --mode analyze",
+    "build-home": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-home vite build --config vite.landing.config.ts",
+    "build-home:analyze": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-home vite build --config vite.landing.config.ts --mode analyze",
+    "build-app": "yarn copy-favicon && VITE_APP_VERSION=$(git rev-parse HEAD) env-cmd -e production-app vite build",
     "test": "vitest",
     "test:ci": "vitest run",
     "lint": "node node_modules/.bin/eslint src",
@@ -191,5 +192,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@1.22.22"
 }
