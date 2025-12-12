@@ -29,8 +29,7 @@
     "tscheck": "yarn ts:clean && tsc -p tsconfig.json --noEmit",
     "prettier": "prettier --write src/**/*.{js,ts,jsx,tsx,css,scss}",
     "typechain:stargate": "typechain --target ethers-v6 --out-dir ./src/typechain-types-stargate './node_modules/@stargatefinance/stg-evm-sdk-v2/artifacts/src/interfaces/IStargate.sol/IStargate.json'",
-    "postinstall": "cd ./sdk && echo \"Building SDK\" && yarn && yarn build",
-    "prebuild": "cd ./sdk && yarn tsx scripts/prebuild"
+    "postinstall": "cd ./sdk && echo \"Building SDK\" && yarn && yarn build"
   },
   "dependencies": {
     "@apollo/client": "3.5.6",
@@ -192,5 +191,6 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "postinstall": ""
 }
